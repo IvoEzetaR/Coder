@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+* {padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color:#29262B ;
+display: grid;
+grid-template-areas: 
+"header header header"
+"main main aside"
+"footer footer footer";
+grid-template-rows: 0.1fr 2.5fr 0.1fr;
+height: 100vh;
+font-size: 16px;
+}
+
+
+
+/*NAV BAR*/
+.header { background-color: #000;
+    grid-area: header;
+}
+
+.header__h1-container {display: flex;}
+
+.header__logo {color: #AC5FDB   ;
+    padding:5px;
+    margin: 5px 15px;
+margin: 0 auto;
+    
+}
+
+.header__nav {display: flex;
+align-items: center;
+justify-content: space-evenly;
+justify-items: start;}
+
+.header__nav-ul {display: flex;
+justify-content: end;
+}
+
+.header__nav-li { list-style: none;
+    margin: 0.625em;
+    padding: 0.625em;
+}
+
+.header__nav-li:hover {background-color: rgb(245, 135, 1);
+border: 2px solid rgb(162, 37, 3);
+cursor: pointer;
+}
+
+.nav__a {text-decoration: none;
+color: #AC5FDB;}
+
+/*MAIN*/
+
+.main {display: flex;
+flex-direction: column;
+grid-area: main ;
+background-color: #29262B;}
+
+.h2 {margin:0 auto;
+    font-size: 4.0em;
+    margin-top: 0.625rem;
+    color: #E3A2EE;
+    }
+.main__p {font-size: 1.4em;
+    margin: 1.25em;
+    color: #fff;
+}
+
+
+/*ASIDE*/
+.aside {background-color: #29262B;
+grid-area: aside;
+border: 2px solid #E3A2EE;
+display: flex;
+flex-direction: column;
+}
+.aside__img-container {
+    width: 80%;
+    margin: 3.5em auto;
+}
+.aside__img {width: 100%;}
+
+.aside__p {color: #fff;
+margin-top: 1.2em;}
+/*FOOTER*/
+.footer {width: 100%;
+background-color: #000;
+color: #AC5FDB;
+text-align: center;
+font-size: 1.8em;
+font-family: 'Roboto', sans-serif;
+grid-area: footer;}
+.bi {color: #AC5FDB;}
+.bi:hover {color: #E3A2EE;}
+
+.bi-instagram {: ;}
+
+.footer__h2 {text-align: center;
+font-size: 2em;}
+/*CONTACTO*/
+
+.form {display: flex;
+flex-direction: column;
+margin-top: 0.625em;
+grid-area: main;}
+
+.form__container {margin: 0.0625em auto ;
+margin-bottom: 12.5em;
+width: 31.25em;
+height: 25em;
+border: 2px solid #e3a2ee;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+background-color: #3C3541;
+}
+
+.form__input-container {display: flex;
+flex-direction: column;}
+
+.form__label {font-size: 1.8em; 
+text-align: center;
+color: #fff;}
+
+.form__input{
+color: #000;
+background: ;
+outline: none;
+width: 80%;
+margin: 0.3125em auto;
+height: 2.8125em;
+border: none;
+padding: 0.625em;
+font-size: 1.4em;}
+
+
+.form__legend {font-size: 2em;}
+
+.button { background-color: #E3A2EE;
+color: #fff;
+font-size: 1.8em;
+text-align: center;
+width: 80%;
+margin: 0.625em auto;
+height: 3.125em;}
+
+.button:hover {background-color: #AC5FDB;
+
+}
+
+@media screen and (max-width: 1200px) {
+    body {font-size: 14px;}
+   
+}
+
+@media screen and (max-width: 935px) {
+    body {grid-template-areas: 
+        "header header header"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";}
+
+        .aside__p {font-size: 1.5em;}
+
+}
+
+@media screen and (max-width: 600px) {
+    body {font-size: 12px;}
+}
+
+@media screen and (max-width: 412px) {
+    .footer {font-size: 1.4em;}
+    
+}
