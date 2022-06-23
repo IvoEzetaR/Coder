@@ -21,40 +21,20 @@ font-size: 16px;
 
 
 /*NAV BAR*/
+
+.header {grid-area: header;
+    display: flex;
+}
+.bg-negro {background-color: #000;}
+
 .header { background-color: #000;
     grid-area: header;
 }
+.navbar-logo {font-size: 3.3rem;}
 
-.header__h1-container {display: flex;}
+.nav-link{color: #AC5FDB; font-size: 1.5rem;}
 
-.header__logo {color: #AC5FDB   ;
-    padding:5px;
-    margin: 5px 15px;
-margin: 0 auto;
-    
-}
-
-.header__nav {display: flex;
-align-items: center;
-justify-content: space-evenly;
-justify-items: start;}
-
-.header__nav-ul {display: flex;
-justify-content: end;
-}
-
-.header__nav-li { list-style: none;
-    margin: 0.625em;
-    padding: 0.625em;
-}
-
-.header__nav-li:hover {background-color: rgb(245, 135, 1);
-border: 2px solid rgb(162, 37, 3);
-cursor: pointer;
-}
-
-.nav__a {text-decoration: none;
-color: #AC5FDB;}
+.nav-link:hover {color: #E3A2EE}
 
 /*MAIN*/
 
