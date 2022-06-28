@@ -102,7 +102,14 @@ background-color: #ddd;
 text-align: center;
 margin: 1.25rem auto;
 width: 50%;
-box-shadow: 8px 18px 41px -1px rgba(0,0,0,0.75);
+box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+border-radius: 6px;
+transition: all 400ms ease;
+}
+
+
+.main__a:hover {box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
 }
 
 .main__img-container {width: 100%;
@@ -154,7 +161,67 @@ padding: 20px;}
     
 /*CONTACTO*/
 
+.form {
+    grid-area: main;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0/300%);
+    background-color: #fff;
+    text-align: center;
+    margin: 0.625rem auto;}
 
+.form__tittle {text-align: center;
+margin: 0.5rem;
+font-size: 2.1875rem;}
+
+.form__p {text-align: center;
+margin-top: 10px;}
+
+.form__container {margin-top: 3em;
+display: grid;
+gap: 2.5rem;}
+
+.form__groups {position: relative;}
+
+.form__label {display: inline-block;
+    position: absolute;
+    top: 0;}
+    
+
+.form__input {width: 100%;
+background: none;
+color: #333;
+font-size: 1rem;
+padding: 0.6rem 0.3em;
+border: none;
+outline: none;
+border-bottom: 1px solid #5F85DB;
+margin-top: 10px;}
+
+#textarea {width: 100%;
+    background: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.6rem 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5F85DB;
+    margin-top: 10px;
+    border-radius: 10px;
+    resize: none;
+    }
+
+.form__button {width: 90%;
+padding: 10px;
+background-color: #90B8F8;
+color: #fff;
+cursor: pointer;
+border-radius: 25px;
+}
+
+.form__button:hover {background-color: #5F85DB;}
 
 
 @media (max-width: 1200px){ 
